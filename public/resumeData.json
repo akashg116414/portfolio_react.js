@@ -1,13 +1,13 @@
 {
   "main": {
     "name":"Akash Garg",
-    "occupation":"(Your Occupation Here)",
+    "occupation":"Data Scientist and Full-Stack Developer",
     "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
     "image":"profilepic.jpg",
     "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "contactmessage":"Have a project for me? Think I'd be a good fit for your team? I'd love to hear from you, give me a shout by email or by using the form below if you'd like to get in contact with me.",
     "email": "akashgarg1164@gmail.com",
-    "phone": "9991991669",
+    "phone": "+91-9991991669",
     "address":{
       "street":"House No: 1164, Sector: 14",
       "city":"Sonipat",
@@ -50,7 +50,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"",
     "education":[
       {
         "school":"BML Munjal University",
@@ -70,7 +70,7 @@
         "company":"IAugmentor Labs",
         "title":"Backend Developer Intern",
         "years":"Jan 2020 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Managing and developing api's for Adative E-learning App."
       }
     ],
     "skills":[
@@ -118,26 +118,6 @@
   },
   "portfolio":{
     "projects": [
-      {
-        "title":"Smart Alarm App",
-        "category":"Android App",
-        "image":"smart_alarm.jpeg"
-      },
-      {
-        "title":"Face Recognition",
-        "category":"Machine learning and Image processing project to recognize the face.",
-        "image":"face.jpg"
-      },
-      {
-        "title":"Text Summarizer",
-        "category":"Project to summarize article or document text.",
-        "image":"text_sum.png"
-      },
-      {
-        "title":"Face Recognition Door Lock System",
-        "category":"Face Recognition Door Lock uses Telegram bot and way2sms Services and unlock the door when face match",
-        "image":"face_door.jpg"
-      },
       {
         "title":"Smart Alarm App",
         "category":"Android App",
