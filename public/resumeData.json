@@ -4,7 +4,7 @@
     "occupation":"Data Scientist and Full-Stack Developer",
     "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio":"I am currently a pre-final year student at The BML Munjal University and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer and have a year of experience in Data Science and Machine Learning. I have also got 1st place in hackathon by Alibaba Cloud and Tianchi Labs. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
     "contactmessage":"Have a project for me? Think I'd be a good fit for your team? I'd love to hear from you, give me a shout by email or by using the form below if you'd like to get in contact with me.",
     "email": "akashgarg1164@gmail.com",
     "phone": "+91-9991991669",
@@ -59,7 +59,7 @@
         "description":"CPGA: 8.4"
       },
       {
-        "school":"Liitle Angels Sr. Sec. School",
+        "school":"Little Angels Sr. Sec. School",
         "degree":"Senior Secondary",
         "graduated":"March 2016",
         "description":"Percentage: 90.60%"
@@ -84,15 +84,15 @@
       },
       {
         "name":"ReactJs",
-        "level":"50%"
+        "level":"45%"
       },
       {
         "name":"CSS",
-        "level":"70%"
+        "level":"55%"
       },
       {
         "name":"HTML5",
-        "level":"80%"
+        "level":"70%"
       },
       {
         "name":"Machine Learning",
