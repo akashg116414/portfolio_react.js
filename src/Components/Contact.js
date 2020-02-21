@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
 class Contact extends Component {
+   constructor(props) {
+      super(props);
+      this.state = { contactMessage: '', contactSubject: '', contactName: 'Name', contactEmail: 'email@example.com' };
+      this.handleChange = this.handleChange.bind(this);
+      this.handleSubmit = this.handleSubmit.bind(this);
+     }
   render() {
 
     if(this.props.data){
@@ -10,7 +16,7 @@ class Contact extends Component {
       var state = this.props.data.address.state;
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
-      // var email = this.props.data.email;
+      var email = this.props.data.email;
       var message = this.props.data.contactmessage;
     }
 
@@ -56,11 +62,11 @@ class Contact extends Component {
 
                   <div>
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" onChange={this.handleChange}></textarea>
                   </div>
 
                   <div>
-                     <button className="submit">Submit</button>
+                     <button className="submit" onClick={this.handleSubmit}>Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif" />
                      </span>
@@ -112,6 +118,27 @@ class Contact extends Component {
       </div>
    </section>
     );
+  }
+
+  handleChange(event) {
+   this.setState({contactMessage: event.target.value, contactSubject: event.target.value, contactName: event.target.value, contactEmail: event.target.value })
+ }
+
+  handleSubmit (event) {
+	const templateId = 'template_id';
+
+	this.sendFeedback(templateId, {message_html: this.state.contactMessage, from_name: this.state.name, reply_to: this.state.email})
+  }
+
+  sendFeedback (templateId, variables) {
+	window.emailjs.send(
+  	this.email, templateId,
+  	variables
+  	).then(res => {
+    	console.log('Email successfully sent!')
+  	})
+  	// Handle errors here however you like, or use a React error boundary
+  	.catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
   }
 }
 
